@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- import the webpage's client-side javascript file -->
-    <script src="client.js" defer></script>
+    <script src="/client.js" defer></script>
     <div class="top">
       <ul>
         <li style="float:left"><a href="index.html">Home</a></li>
@@ -28,15 +28,13 @@
 </head>
 <body>
 <h1>Search for a comic Character</h1>
-<div = "search">
+
 <form>
   <input name="character" aria-label="search-char" type="text" maxlength="100" placeholder="">
-  <button onclick="submitChar()">search</button>
-  <button onclick="clearChar()">Clear</button>
+  <button type="submit" id="add-char">Add another character</button>
+  <button type="submit" id="submit-character">Search for character</button>
 </form>
-</div>
-<p>the character/s you search for were:</p>
-<p id="srchChar"></p>
+  
 </body>
 
 
